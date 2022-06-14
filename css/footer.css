@@ -1,0 +1,174 @@
+@import url("https://use.typekit.net/ajq5bje.css");
+
+:root {
+  --clr-pri: #fafaf7;
+  --clr-sec: #000;
+  --clr-ter: #fad3e1;
+
+  --ff-header: hero-new, sans-serif;
+  --ff-heading: lexia-mono, serif;
+  --ff-main: hero-new, sans-serif;
+
+  /* Hero New Font-Sizes */
+  --h-semibold: 600;
+  --h-light: 300;
+  --h-ultralight: 200;
+
+  /* Lexia Mono Font-Sizes */
+  --l-bold: 700;
+
+  --grid-gap: 1px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-sec);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+  background-color: var(--clr-pri);
+  font-family: var(--ff-main);
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem auto;
+
+}
+
+#homofaber {
+width: 4rem;
+}
+
+#first_container_footer {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  padding: 1rem;
+  background-color: var(--clr-sec);
+  color: var(--clr-pri);
+}
+
+#social_media {
+  display: none;
+
+}
+
+#second_container_footer {
+background-color: var(--clr-sec);
+padding: 1rem;
+color:var(--clr-pri);
+}
+
+
+
+#third_container_footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--clr-sec);
+  color: var(--clr-pri);
+  flex-grow: 1;
+  gap: 4vw;
+}
+
+#adress {
+  margin-top: 4vw;
+}
+
+footer a {
+  text-decoration: none;
+  color:var(--clr-pri);
+  padding: 0;
+}
+
+
+.social_media_icon {
+  width: 50%;
+  height: auto;
+  filter: grayscale();
+}
+
+#social_media_section {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/*MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES*/
+
+
+
+  @media only screen and (min-width: 820px) {
+    footer {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.8rem;
+      max-width: 100vw;
+  }
+  #homofaber {
+    width: 1;
+  }
+  #social_media {
+    display: block;
+  }
+
+  #first_container_footer {
+    gap: 9vw;
+  }
+
+  #social_media_section {
+    display: none;
+  }
+
+  #second_container_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+  }
+
+  #adress {
+    margin-top: 0;
+  }
+
+  #third_container_footer {
+    gap: 2vw;
+    flex-direction: column;
+  }
+  
+
+  }
+
+  @media only screen and (min-width: 1080px) {
+    footer {
+      display: flex;
+      font-size: 1rem;
+    }
+
+    #homofaber {
+      width: 4.5rem;
+    }
+
+    #first_container_footer {
+      gap:4vw;
+    }
+
+    #second_container_footer {
+      gap:4vw;
+    }
+
+
+    #third_container_footer {
+      gap: 4vw;
+      flex-direction: row;
+    }
+
+ }
